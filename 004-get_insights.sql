@@ -11,6 +11,6 @@ SELECT
   relative_unexpected_difference, -- unexpected_difference / Expected difference
   apriori_support -- The support of this segment
 FROM
-  ML.GET_INSIGHTS(MODEL bq_demo.ecommerce_sales_contribution_model)
+  ML.GET_INSIGHTS(MODEL your_project.your_dataset.ecommerce_sales_contribution_model)
 ORDER BY
   unexpected_difference DESC; -- Or 'difference DESC' for raw impact
