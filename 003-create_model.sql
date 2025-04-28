@@ -1,7 +1,7 @@
 
 -- Create the CONTRIBUTION ANALYSIS model
 
-CREATE OR REPLACE MODEL bq_demo.ecommerce_sales_contribution_model
+CREATE OR REPLACE MODEL your_project.your_dataset.ecommerce_sales_contribution_model
 OPTIONS(
   MODEL_TYPE = 'CONTRIBUTION_ANALYSIS',
   CONTRIBUTION_METRIC = 'SUM(sale_price)',
@@ -15,4 +15,4 @@ SELECT
   user_country,
   is_test
 FROM
-  bq_demo.sales_data_for_ca_model;
+  your_project.your_dataset.sales_data_for_ca_model;
