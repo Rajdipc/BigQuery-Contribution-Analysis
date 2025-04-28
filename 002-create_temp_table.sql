@@ -1,7 +1,7 @@
 
 -- Create table
 
-CREATE OR REPLACE TABLE `bq_demo.sales_data_for_ca_model` AS
+CREATE OR REPLACE TABLE `your_project.your_dataset.sales_data_for_ca_model` AS
 WITH
   sales_with_dimensions AS (
     SELECT
